@@ -1,0 +1,161 @@
+
+{
+  "manifestVersion": "1.0.0",
+  "agents": [
+    {
+      "agentId": "predef_keyword_researcher",
+      "name": "Keyword Researcher Agent",
+      "description": "Generates a list of SEO keywords based on a main topic.",
+      "entryPoint": "agents/KeywordResearchAgent.ts",
+      "className": "KeywordResearchAgent",
+      "version": "1.0.0",
+      "supportedActions": [
+        { "name": "generateKeywords", "description": "Generates keywords for a given topic." }
+      ]
+    },
+    {
+      "agentId": "predef_content_planner",
+      "name": "Content Planner Agent",
+      "description": "Creates a structured content outline for a given topic.",
+      "entryPoint": "agents/ContentPlannerAgent.ts",
+      "className": "ContentPlannerAgent",
+      "version": "1.0.0",
+      "supportedActions": [
+        { "name": "generateOutline", "description": "Generates a content outline for a topic." }
+      ]
+    },
+    {
+      "agentId": "predef_content_writer",
+      "name": "Content Writer Agent",
+      "description": "Drafts a specific piece of content based on topic, type, and length.",
+      "entryPoint": "agents/ContentWriterAgent.ts",
+      "className": "ContentWriterAgent",
+      "version": "1.0.0",
+      "supportedActions": [
+        { "name": "writeContent", "description": "Writes content based on topic, type, and length." }
+      ]
+    },
+    {
+      "agentId": "predef_meta_tag_generator",
+      "name": "Meta Tag Generator Agent",
+      "description": "Generates SEO-friendly meta titles and descriptions.",
+      "entryPoint": "agents/MetaTagGeneratorAgent.ts",
+      "className": "MetaTagGeneratorAgent",
+      "version": "1.0.0",
+      "supportedActions": [
+        { "name": "generateMetaTags", "description": "Generates meta title and description for content summary." }
+      ]
+    },
+    {
+      "agentId": "predef_maestro_orchestrator",
+      "name": "Maestro Orchestrator Agent",
+      "description": "Master agent for planning, orchestration, and agent design assistance.",
+      "entryPoint": "agents/MaestroOrchestratorAgent.ts",
+      "className": "MaestroOrchestratorAgent",
+      "version": "1.0.0",
+      "supportedActions": [
+        { "name": "generatePlan", "description": "Generates an orchestration plan for a user goal." },
+        { "name": "chat", "description": "Conversational interaction or agent design assistance." },
+        { "name": "advancedPrompt", "description": "Processes an advanced, direct prompt." }
+      ]
+    },
+    {
+      "agentId": "predef_project_manager_ai",
+      "name": "Project Manager AI Agent",
+      "description": "Manages projects, tasks, and team members through conversational commands.",
+      "entryPoint": "agents/ProjectManagerAgent.ts",
+      "className": "ProjectManagerAgent",
+      "version": "1.0.0",
+      "supportedActions": [
+        { "name": "processCommand", "description": "Processes a user command related to project management." }
+      ]
+    },
+    {
+      "agentId": "predef_social_media_strategist",
+      "name": "Social Media Strategist AI",
+      "description": "Develops social media strategies and content calendars.",
+      "entryPoint": "agents/SocialMediaStrategistAgent.ts",
+      "className": "SocialMediaStrategistAgent",
+      "version": "1.0.0",
+      "supportedActions": [
+        { "name": "developCampaignBrief", "description": "Develops a social media campaign brief." },
+        { "name": "generateContentCalendar", "description": "Generates a high-level content calendar." },
+        { "name": "getGeneralStrategyAdvice", "description": "Provides general social media strategy advice." }
+      ]
+    },
+    {
+      "agentId": "predef_twitter_content_ai",
+      "name": "Twitter / X Content AI",
+      "description": "Specializes in drafting engaging tweets and related content.",
+      "entryPoint": "agents/TwitterContentAgent.ts",
+      "className": "TwitterContentAgent",
+      "version": "1.0.0",
+      "supportedActions": [
+        { "name": "draftTweet", "description": "Drafts a tweet." },
+        { "name": "generateHashtags", "description": "Generates Twitter hashtags." },
+        { "name": "suggestVisualIdea", "description": "Suggests a visual idea for a tweet." }
+      ]
+    },
+    {
+      "agentId": "predef_linkedin_content_ai",
+      "name": "LinkedIn Professional Post AI",
+      "description": "Writes professional, insightful content for LinkedIn.",
+      "entryPoint": "agents/LinkedInContentAgent.ts",
+      "className": "LinkedInContentAgent",
+      "version": "1.0.0",
+      "supportedActions": [
+        { "name": "draftUpdate", "description": "Drafts a LinkedIn update." },
+        { "name": "draftArticleIdea", "description": "Drafts a LinkedIn article idea." }
+      ]
+    },
+    {
+      "agentId": "predef_facebook_content_ai",
+      "name": "Facebook Content AI",
+      "description": "Creates versatile content for Facebook.",
+      "entryPoint": "agents/FacebookContentAgent.ts",
+      "className": "FacebookContentAgent",
+      "version": "1.0.0"
+    },
+    {
+      "agentId": "predef_instagram_content_ai",
+      "name": "Instagram Content AI",
+      "description": "Focuses on visual storytelling for Instagram.",
+      "entryPoint": "agents/InstagramContentAgent.ts",
+      "className": "InstagramContentAgent",
+      "version": "1.0.0"
+    },
+    {
+      "agentId": "predef_threads_content_ai",
+      "name": "Threads App Content AI",
+      "description": "Crafts short, text-based updates for Threads.",
+      "entryPoint": "agents/ThreadsContentAgent.ts",
+      "className": "ThreadsContentAgent",
+      "version": "1.0.0"
+    },
+    {
+      "agentId": "predef_youtube_content_ai",
+      "name": "YouTube Content AI",
+      "description": "Assists with YouTube video content: titles, descriptions, etc.",
+      "entryPoint": "agents/YouTubeContentAgent.ts",
+      "className": "YouTubeContentAgent",
+      "version": "1.0.0"
+    },
+    {
+      "agentId": "predef_tiktok_content_ai",
+      "name": "TikTok Content AI",
+      "description": "Generates ideas for short TikTok videos.",
+      "entryPoint": "agents/TikTokContentAgent.ts",
+      "className": "TikTokContentAgent",
+      "version": "1.0.0"
+    },
+    {
+      "agentId": "predef_pinterest_content_ai",
+      "name": "Pinterest Content AI",
+      "description": "Helps create content for Pinterest.",
+      "entryPoint": "agents/PinterestContentAgent.ts",
+      "className": "PinterestContentAgent",
+      "version": "1.0.0"
+    }
+  ],
+  "permissions": []
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Copy of Maestro Orchestrator V2",
+  "description": "An AI-powered application for orchestrating tasks and managing AI agents using the Gemini API. Features include SEO tools, agent management, and a central Maestro agent for planning and agent design.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
